@@ -12,8 +12,7 @@ export default function MyNavbar() {
   return (
     <Navbar 
       expand="lg" 
-      sticky="top"
-      style={{ backgroundColor: "var(--color-gris-metalise)" }} 
+      fixed="top" 
       expanded={expanded} 
     >
       <Container>
@@ -38,7 +37,7 @@ export default function MyNavbar() {
 
             <Nav.Link 
               href="/" 
-              className={`text-white ${router.pathname === "/" && activeSection === "" ? "active-link" : ""}`} 
+              className={`${router.pathname === "/" && activeSection === "" ? "active-link" : ""}`} 
               onClick={() => {
                 setActiveSection("");
                 setExpanded(false);
@@ -49,7 +48,7 @@ export default function MyNavbar() {
 
             <Nav.Link
               href="/a-propos"
-              className={`text-white ${router.pathname === "/a-propos" ? "active-link" : ""}`}
+              className={`${router.pathname === "/a-propos" ? "active-link" : ""}`}
               onClick={() => {
                 setExpanded(false);
                 router.push("/a-propos");
@@ -60,7 +59,7 @@ export default function MyNavbar() {
 
             <Nav.Link
               href="/mes-services"
-              className={`text-white ${router.pathname === "/mes-services" ? "active-link" : ""}`}
+              className={`${router.pathname === "/mes-services" ? "active-link" : ""}`}
               onClick={() => {
                 setExpanded(false);
                 router.push("/mes-services");
@@ -71,7 +70,7 @@ export default function MyNavbar() {
 
             <Nav.Link
               href="/me-contacter"
-              className={`text-white ${router.pathname === "/me-contacter" ? "active-link" : ""}`}
+              className={`${router.pathname === "/me-contacter" ? "active-link" : ""}`}
               onClick={() => {
                 setExpanded(false);
                 router.push("/me-contacter");
@@ -82,7 +81,7 @@ export default function MyNavbar() {
 
             <Nav.Link
               href="/mes-tarifs"
-              className={`text-white ${router.pathname === "/mes-tarifs" ? "active-link" : ""}`}
+              className={`${router.pathname === "/mes-tarifs" ? "active-link" : ""}`}
               onClick={() => {
                 setExpanded(false);
                 router.push("/mes-tarifs");

@@ -5,6 +5,10 @@ html, body {
   width: 100%;
 }
 
+main {
+  padding-top: 70px;
+}
+
 body {
   font-family: "Times New Roman", serif;
 }
@@ -62,6 +66,37 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   justify-content: space-between;
   height: 100%;
   padding: 20px;
+}
+
+/* --- Navbar --- */
+.navbar {
+  background-color: var(--color-gris-metalise) !important;
+  padding: 0.8rem 1rem;
+}
+
+.navbar .nav-link {
+  color: var(--color-noir);
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s, text-shadow 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-blanc);
+  transform: scale(1.05);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.navbar .nav-link.active-link {
+  font-weight: bold;
+  color: var(--color-noir);
+}
+
+.navbar-brand img {
+  transition: transform 0.2s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
 }
 
 /* --- Page Home --- */
@@ -127,6 +162,72 @@ button:hover, .btn:hover, .cta-secondary button:hover {
 
 .section-services, .cta-secondary {
   margin-top: 3rem; 
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: var(--color-gris-metalise) !important;
+  padding: 0.8rem 1rem;
+}
+
+.footer-column-title {
+  color: var(--color-noir);
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.footer-link {
+  color: var(--color-noir);
+  margin-bottom: -10px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer-link::before {
+  content: "➔"; 
+  margin-right: 6px;
+  color: var(--color-noir);
+}
+
+.footer-link:hover {
+  color: var(--color-blanc);
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.container-link {
+  margin-left: 10px;
+}
+
+.contact-link {
+  display: inline-block;
+  color: var(--color-noir);
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.contact-link:hover {
+  color: var(--color-blanc);
+  transform: scale(1.05);
+}
+
+.social-icons {
+  margin-left: 10px;
+}
+
+.social-link {
+  display: inline-block;
+  color: var(--color-noir);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--color-blanc);
+  transform: scale(1.2);
+}
+
+hr.border-light {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* --- Responsive --- */
