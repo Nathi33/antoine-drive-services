@@ -9,14 +9,130 @@ body {
   font-family: "Times New Roman", serif;
 }
 
-/* --- Page Home --- */
-.hero-image-wrapper {
-  position:relative;
-  width: 600px;
-  height: 600px;
-  margin-bottom: 20px;
+h1, h2, h3, h4 {
+  color: var(--color-noir);
 }
 
-.img-logo {
-  border-radius: 60px;
+p, .lead {
+  color: var(--color-gris-anthracite);
+}
+
+button, .btn, .btn-outline-primary, .cta-secondary button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, border 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+button, .btn, .cta-secondary button {
+  background-color: var(--color-gris-metalise);
+  color: var(--color-noir);
+  border: 1px solid var(--color-noir);
+}
+
+button:hover, .btn:hover, .cta-secondary button:hover {
+  background-color: var(--color-noir);
+  color: var(--color-gris-metalise);
+  border: 1px solid var(--color-gris-metalise);
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: var(--color-noir);
+  border: 1px solid var(--color-gris-anthracite);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-gris-anthracite);
+  color: var(--color-blanc);
+  border: 1px solid var(--color-noir);
+  transform: translateY(-2px);
+}
+
+.section-services .service-card {
+  background-color: var(--color-gris-clair-satine);
+  color: var(--color-gris-anthracite);
+  border: 1px solid var(--color-gris-metalise);
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+}
+
+/* --- Page Home --- */
+.section-home {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.hero-image-wrapper {
+  position:relative;
+  max-width: 100%;
+  width: 650px;
+  height: 370px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.hero-title-svg {
+  margin: 0 auto -80px auto;
+  display: block;
+}
+
+.hero-title-text {
+  font-size: 2.8rem;
+  font-weight: bold;
+  fill: var(--color-noir);
+  letter-spacing: 3px;
+}
+
+.under-title {
+  margin-top: 4rem;
+  font-weight: normal;
+}
+
+.intro-text {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.section-services .service-card h3 {
+  margin-bottom: 10px;
+  min-height: 70px;
+}
+
+.section-services .service-card p {
+  margin-bottom: 15px;
+}
+
+.section-services .service-card button {
+  align-self: flex-start; 
+  width: auto;
+}
+
+.cta-secondary button {
+  margin-top: 10px;
+}
+
+.section-services, .cta-secondary {
+  margin-top: 3rem; 
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero-title-svg {
+    margin-bottom: -40px;
+    max-width: 90%;
+  }
 }
