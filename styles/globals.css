@@ -225,6 +225,44 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   font-style: italic;
 }
 
+/* --- Page Me contacter --- */
+.contact-page-link {
+  color: var(--color-noir);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.contact-page-link:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+  font-style: italic;
+  color: var(--color-noir)
+}
+
+.react-datepicker-wrapper {
+  display: block !important; 
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  display: block;
+}
+
+.required {
+  color: red;
+  margin-left: 2px;
+  font-weight: bold;
+}
+
+.form-legend {
+  font-size: 0.9rem;
+  color: var(--color-gris-anthracite);
+  margin-top: 10px;
+}
+
 /* --- Footer --- */
 .footer {
   background-color: var(--color-gris-metalise) !important;
