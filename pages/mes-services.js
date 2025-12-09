@@ -59,7 +59,7 @@ export default function MesServices() {
           <Row className="mt-3 g-4">
             {/* Transferts aéroport & gare */}
             <Col md={6} className="service-col d-flex flex-column">
-              <h3 className="service-title">🚖 Transferts aéroport & gare</h3>
+              <h2 className="service-title">🚖 Transferts aéroport & gare</h2>
               <p className="service-text">
                 Je vous accompagne pour vos départs et arrivées en toute sérénité. Ponctualité, confort et aide aux bagages inclus.
               </p>
@@ -67,7 +67,7 @@ export default function MesServices() {
 
             {/* Événements & soirées */}
             <Col md={6} className="service-col d-flex flex-column">
-              <h3 className="service-title">🎉 Événements & soirées</h3>
+              <h2 className="service-title">🎉 Événements & soirées</h2>
               <p className="service-text">
                 Besoin d’un trajet pour une soirée, un anniversaire, un mariage ou une sortie entre amis ? Je vous reconduis en toute sécurité et sans stress.
               </p>
@@ -75,7 +75,7 @@ export default function MesServices() {
 
             {/* Transport professionnel */}
             <Col md={6} className="service-col d-flex flex-column">
-              <h3 className="service-title">💼 Transport professionnel</h3>
+              <h2 className="service-title">💼 Transport professionnel</h2>
               <p className="service-text">
                 Pour vos rendez-vous, séminaires ou déplacements réguliers, je vous offre un service fiable, discret et adapté à vos besoins professionnels.
               </p>
@@ -83,7 +83,7 @@ export default function MesServices() {
 
             {/* Courses locales & déplacements du quotidien */}
             <Col md={6} className="service-col d-flex flex-column">
-              <h3 className="service-title">🏡 Courses locales & déplacements du quotidien</h3>
+              <h2 className="service-title">🏡 Courses locales & déplacements du quotidien</h2>
               <p className="service-text">
                 Pour vos trajets proches, vos rendez-vous médicaux, vos courses ou vos visites, je suis là pour vous faciliter la vie.
               </p>
