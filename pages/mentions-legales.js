@@ -43,7 +43,6 @@ export default function MentionsLegales() {
         title="Mentions légales - Antoine Drive Services"
         description="Mentions légales du site Antoine Drive Services : informations légales, propriété, hébergement et données personnelles."
         url="https://www.antoine-drive-services.fr/mentions-legales"
-        image="https://www.antoine-drive-services.fr/images/mentions-legales.webp"
       />
 
       <main>
