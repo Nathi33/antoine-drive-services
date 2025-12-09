@@ -210,6 +210,21 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   margin-top: auto; 
 }
 
+/* --- Page Mes tarifs --- */
+.price-link {
+  color: var(--color-noir);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.price-link:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+  font-style: italic;
+}
+
 /* --- Footer --- */
 .footer {
   background-color: var(--color-gris-metalise) !important;
