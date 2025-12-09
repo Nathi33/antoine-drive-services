@@ -69,17 +69,6 @@ export default function MyNavbar() {
             </Nav.Link>
 
             <Nav.Link
-              href="/me-contacter"
-              className={`${router.pathname === "/me-contacter" ? "active-link" : ""}`}
-              onClick={() => {
-                setExpanded(false);
-                router.push("/me-contacter");
-              }}
-            >
-              Me contacter
-            </Nav.Link>
-
-            <Nav.Link
               href="/mes-tarifs"
               className={`${router.pathname === "/mes-tarifs" ? "active-link" : ""}`}
               onClick={() => {
@@ -90,6 +79,17 @@ export default function MyNavbar() {
               Mes tarifs
             </Nav.Link>
 
+            <Nav.Link
+              href="/me-contacter"
+              className={`${router.pathname === "/me-contacter" ? "active-link" : ""}`}
+              onClick={() => {
+                setExpanded(false);
+                router.push("/me-contacter");
+              }}
+            >
+              Me contacter
+            </Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

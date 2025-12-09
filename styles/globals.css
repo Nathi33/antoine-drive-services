@@ -196,6 +196,20 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   font-style: italic;
 }
 
+/* --- Page Mes services --- */
+.service-col {
+  min-height: 130px; 
+  margin-bottom: 3rem;
+}
+
+.service-title {
+  min-height: 60px; 
+}
+
+.service-text {
+  margin-top: auto; 
+}
+
 /* --- Footer --- */
 .footer {
   background-color: var(--color-gris-metalise) !important;
