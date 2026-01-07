@@ -17,6 +17,10 @@ h1, h2, h3, h4 {
   color: var(--color-noir);
 }
 
+h1 {
+  font-weight: bold;
+}
+
 p, .lead {
   color: var(--color-gris-anthracite);
 }
@@ -137,6 +141,21 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   margin-bottom: 3rem;
 }
 
+.zone-card {
+  background-color: #fff;
+  font-weight: bold;
+  color: var(--color-noir);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.zone-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--color-gris-anthracite);
+  color: var(--color-blanc);
+  border: 1px solid var(--color-noir);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -198,16 +217,41 @@ button:hover, .btn:hover, .cta-secondary button:hover {
 
 /* --- Page Mes services --- */
 .service-col {
-  min-height: 130px; 
-  margin-bottom: 3rem;
+  display: flex;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .service-title {
-  min-height: 60px; 
+  margin-bottom: 0.75rem;
 }
 
 .service-text {
-  margin-top: auto; 
+  margin: 0;
+  line-height: 1.6;
+}
+
+.link-vtc {
+  font-weight: bold;
+  color: var(--color-noir);
+  text-decoration: none;
+}
+
+.link-vtc:hover {
+  font-style: italic;
+  color: var(--color-noir);
 }
 
 /* --- Page Mes tarifs --- */
@@ -263,6 +307,22 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   margin-top: 10px;
 }
 
+/* --- Pages Légales --- */
+.legal-link {
+  color: var(--color-noir);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.legal-link:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+  font-style: italic;
+  color: var(--color-noir)
+}
+
 /* --- Footer --- */
 .footer {
   background-color: var(--color-gris-metalise) !important;
@@ -273,10 +333,20 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   color: var(--color-noir);
   font-weight: bold;
   font-size: 16px;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
-.footer-link {
+.footer-logo {
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+
+.footer-link,
+.footer-link:visited,
+.footer-link:active {
   color: var(--color-noir);
   margin-bottom: -10px;
   transition: transform 0.2s, color 0.2s;
@@ -310,29 +380,81 @@ button:hover, .btn:hover, .cta-secondary button:hover {
   transform: scale(1.05);
 }
 
-.social-icons {
-  margin-left: 10px;
-}
-
-.social-link {
-  display: inline-block;
-  color: var(--color-noir);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-link:hover {
-  color: var(--color-blanc);
-  transform: scale(1.2);
-}
-
 hr.border-light {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* --- Responsive --- */
+@media (max-width: 991px) {
+  .footer .row.align-items-start {
+    row-gap: 2rem; 
+  }
+
+  .footer .col-md-3 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+    text-align: left; 
+  }
+
+  .footer .footer-column-title {
+    text-align: left;
+  }
+
+  .footer .nav.flex-column {
+    text-align: left;
+  }
+}
+
 @media (max-width: 768px) {
+  main {
+    padding-top: 60px;
+  }
+
+  .hero-image-wrapper {
+    position:relative;
+    max-width: 100%;
+    width: 350px;
+    height: 200px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
   .hero-title-svg {
-    margin-bottom: -40px;
-    max-width: 90%;
+    margin: 0 auto -80px auto;
+    display: block;
+  }
+
+  .hero-title-text {
+    font-size: 2.8rem;
+    font-weight: bold;
+    fill: var(--color-noir);
+    letter-spacing: 5px;
+  }
+
+  .hero-title-text {
+    font-size: 2rem;
+  }
+
+  .footer .row.align-items-start {
+    text-align: left !important;
+  }
+
+  .footer .col-md-3 {
+    text-align: left !important;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+   .footer .nav.flex-column {
+    text-align: left !important;
+  }
+
+  .footer .footer-link {
+    display: block;  
+    text-align: left !important;
+    margin-bottom: 0.25rem; 
+    line-height: 1;
   }
 }

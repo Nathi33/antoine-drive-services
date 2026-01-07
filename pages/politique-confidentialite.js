@@ -1,41 +1,7 @@
-// pages/politique-confidentialite.js
 import { Container, Row, Col } from "react-bootstrap";
-import { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Seo from "../components/Seo";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function PolitiqueConfidentialite() {
-  useEffect(() => {
-    // Animation du titre principal
-    gsap.from(".privacy-title", {
-      opacity: 0,
-      y: -30,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".privacy-title",
-        start: "top 90%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    // Animation des sections
-    gsap.utils.toArray(".privacy-section").forEach((section, i) => {
-      gsap.from(section, {
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        delay: i * 0.2,
-        scrollTrigger: {
-          trigger: section,
-          start: "top 95%",
-          toggleActions: "play reverse play reverse",
-        },
-      });
-    });
-  }, []);
 
   return (
     <>
@@ -80,7 +46,7 @@ export default function PolitiqueConfidentialite() {
             <Col>
               <h2>Droits des utilisateurs</h2>
               <p>
-                Conformément à la loi RGPD, vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition de vos données personnelles. Pour exercer vos droits, contactez : <a href="mailto:contact@antoinedriveservices.fr" className="contact-page-link">contact@antoinedriveservices.fr</a>.
+                Conformément à la loi RGPD, vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition de vos données personnelles. Pour exercer vos droits, contactez : <a href="mailto:antoinedriveservices@free.fr" className="contact-page-link">antoinedriveservices@free.fr</a>.
               </p>
             </Col>
           </Row>
@@ -107,7 +73,7 @@ export default function PolitiqueConfidentialite() {
             <Col>
               <h2>Contact</h2>
               <p>
-                Pour toute question relative à la protection des données personnelles, vous pouvez contacter Antoine Drive Services à : <a href="mailto:contact@antoinedriveservices.fr" className="contact-page-link">contact@antoinedriveservices.fr</a>.
+                Pour toute question relative à la protection des données personnelles, vous pouvez contacter Antoine Drive Services à : <a href="mailto:antoinedriveservices@free.fr" className="contact-page-link">antoinedriveservices@free.fr</a>.
               </p>
             </Col>
           </Row>

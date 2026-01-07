@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Ne pas indexer les API ou les fichiers internes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /node_modules/
+Disallow: /out/
+
+# Emplacement du sitemap
+Sitemap: https://www.antoine-drive-services.fr/sitemap.xml

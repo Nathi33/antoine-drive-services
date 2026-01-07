@@ -1,4 +1,3 @@
-// pages/mes-tarifs.js
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -71,7 +70,6 @@ export default function MesTarifs() {
         title="Mes Tarifs & Devis - Antoine Drive Services"
         description="Demandez votre devis personnalisé pour tous vos trajets VTC avec Antoine Drive Services. Prix au plus juste et service sur-mesure."
         url="https://www.antoine-drive-services.fr/mes-tarifs"
-        image="https://www.antoine-drive-services.fr/images/mes-tarifs.webp"
       />
 
       <main>
@@ -99,7 +97,7 @@ export default function MesTarifs() {
                 📞 <a href="tel:+33743652785" className="price-link">07 43 65 27 85</a>
               </p>
               <p>
-                ✉️ <a href="mailto:contact@antoinedriveservices.fr" className="price-link">contact@antoinedriveservices.fr</a>
+                ✉️ <a href="mailto:antoinedriveservices@free.fr" className="price-link">contact@antoinedriveservices.fr</a>
               </p>
             </Col>
           </Row>
