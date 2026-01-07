@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -16,7 +15,15 @@ export default function MyNavbar() {
       expanded={expanded} 
     >
       <Container>
-        <Navbar.Brand as={Link} href="/" className="brand-hover-bold">
+        <Navbar.Brand 
+          as="div" 
+          className="brand-hover-bold"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "/";
+          }}
+          style={{ cursor: 'pointer' }}
+        >
           <Image
             src="/Logo.webp"
             alt="Logo Antoine Drive Services"

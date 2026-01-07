@@ -9,9 +9,9 @@ export default function Seo({
 }) {
   const defaultTitle = "Antoine Drive Services - Transferts et trajets privés";
   const defaultDescription =
-    "Antoine Drive Services propose des trajets sur-mesure : VTC, transferts aéroports, gares, événements et courses locales avec chauffeur privé.";
-  const defaultUrl = "https://www.antoinedrive.fr/";
-  const defaultImage = "https://www.antoinedrive.fr/images/preview.png";
+    "Antoine Drive Services propose des trajets sur-mesure : VTC, transferts aéroports, gares, événements, mariages et courses locales avec chauffeur privé.";
+  const defaultUrl = "https://www.antoine-drive-services.fr/";
+  const defaultImage = "https://www.antoine-drive-services.fr/Logo.webp";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -20,25 +20,32 @@ export default function Seo({
     "description": defaultDescription,
     "url": defaultUrl,
     "image": defaultImage,
-    "telephone": "+33 6 12 34 56 78",
+    "telephone": "+33 7 43 65 27 85",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "12 Rue Exemple",
-      "addressLocality": "Saint Christoly de Blaye",
-      "postalCode": "33920",
+      "streetAddress": "3 route de la Combe",
+      "addressLocality": "Vaire",
+      "postalCode": "85150",
       "addressCountry": "FR"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Gironde"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 46.601,
+      "longitude": -1.75
     },
+    "areaServed": [
+      {"@type": "City", "name": "Vaire"},
+      {"@type": "City", "name": "Benet"},
+      {"@type": "City", "name": "Fontenay-le-Comte"},
+    ],
+      
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Services VTC",
       "itemListElement": [
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transferts aéroports" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Courses locales & longues distances" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Événements & occasions" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Courses locales" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Événements, mariages & occasions" } }
       ]
     },
     "openingHoursSpecification": [
@@ -57,11 +64,6 @@ export default function Seo({
         "closes": "22:00"
       }
     ],
-    "sameAs": [
-      "https://www.facebook.com/AntoineDriveServices",
-      "https://www.instagram.com/AntoineDriveServices",
-      "https://www.linkedin.com/company/AntoineDriveServices"
-    ]
   };
 
   return (

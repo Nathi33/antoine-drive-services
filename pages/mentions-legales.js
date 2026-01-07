@@ -1,42 +1,9 @@
-// pages/mentions-legales.js
 import { Container, Row, Col } from "react-bootstrap";
-import { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Seo from "../components/Seo";
 
-gsap.registerPlugin(ScrollTrigger);
 
 export default function MentionsLegales() {
-  useEffect(() => {
-    // Animation du titre principal
-    gsap.from(".legal-title", {
-      opacity: 0,
-      y: -30,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".legal-title",
-        start: "top 90%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    // Animation des sections
-    gsap.utils.toArray(".legal-section").forEach((section, i) => {
-      gsap.from(section, {
-        opacity: 0,
-        y: 30,
-        duration: 0.8,
-        delay: i * 0.2,
-        scrollTrigger: {
-          trigger: section,
-          start: "top 95%",
-          toggleActions: "play reverse play reverse",
-        },
-      });
-    });
-  }, []);
-
+  
   return (
     <>
       <Seo
@@ -57,9 +24,9 @@ export default function MentionsLegales() {
               </p>
               <ul>
                 <li>Nom : Antoine Drive Services</li>
-                <li>Adresse : [Adresse du siège ou du domicile]</li>
-                <li>Email : contact@antoinedriveservices.fr</li>
-                <li>Numéro de téléphone : 07 43 65 27 85</li>
+                <li>Adresse : Vaire, 85150</li>
+                <li>Email : <a href="mailto:antoinedriveservices@free.fr" className="legal-link">antoinedriveservices@free.fr</a></li>
+                <li>Numéro de téléphone : <a href="tel:+33743652785" className="legal-link">07 43 65 27 85</a></li>
               </ul>
             </Col>
           </Row>
@@ -71,9 +38,9 @@ export default function MentionsLegales() {
                 Le site est hébergé par :
               </p>
               <ul>
-                <li>Nom de l’hébergeur : [Nom de l’hébergeur, ex. OVH, IONOS…]</li>
-                <li>Adresse : [Adresse de l’hébergeur]</li>
-                <li>Numéro de téléphone : [Numéro de l’hébergeur]</li>
+                <li>Nom de l’hébergeur : OVH</li>
+                <li>Adresse : 2 rue Kellermann, 59100 Roubaix, France</li>
+                <li>Numéro de téléphone : 1007</li>
               </ul>
             </Col>
           </Row>

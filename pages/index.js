@@ -1,15 +1,19 @@
 import { Container, Button } from 'react-bootstrap';
 import Image from 'next/image';
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Seo from '../components/Seo';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  
+  const router = useRouter();
+
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
 
     // Animation du titre principal
     gsap.from(".hero-title-svg", {
@@ -77,13 +81,13 @@ export default function Home() {
       }
     });
 
-  }, []);
+  }, [router.asPath]);
 
   return (
     <>
       <Seo
         title="Antoine Drive Services - Votre transport sur-mesure"
-        description="Transferts aéroports, courses locales et événements avec chauffeur professionnel. Service ponctuel et confortable."
+        description="Transferts aéroports, courses locales, événements et mariages, avec chauffeur professionnel. Service ponctuel et confortable."
         url="https://www.antoine-drive-services.fr/"
         image="https://www.antoine-drive-services.fr/images/Home.webp"
       />
@@ -115,8 +119,7 @@ export default function Home() {
             </h1>
             
             <Container className="text-center my-5">
-
-              {/* ICI → ton wrapper original, dimensions intactes */}
+              {/* Wrapper original */}
               <div className="hero-image-wrapper">
                 <Image
                   src="/Home.webp"
@@ -137,11 +140,34 @@ export default function Home() {
                 transferts aéroports, gares, événements spéciaux et courses privées.
                 Service ponctuel et confortable avec chauffeur professionnel.
               </p>
+            </Container>
 
-              <p className="text-muted">
-                Disponible sur Vaire et sa région, pour vos trajets locaux et longue distance.
-              </p>
+            {/* --- ZONES DESSERVIES --- */}
+            <section className="section-zones mt-5">
+              <Container className="text-center">
+                <h2 className="mb-4">Zones desservies</h2>
+                <p className="mb-4">
+                  Antoine Drive Services intervient sur plusieurs communes pour vos trajets VTC :
+                </p>
 
+                <div className="row justify-content-center">
+                  {[
+                    { name: "Vaires", href: "/vtc/vaires" },
+                    { name: "Benet", href: "/vtc/benet" },
+                    { name: "Fontenay-le-Comte", href: "/vtc/fontenay-le-comte" },
+                  ].map((zone, i) => (
+                    <div key={i} className="col-6 col-md-3 mb-3">
+                      <Link href={zone.href} className="zone-card p-3 border rounded shadow-sm d-block text-decoration-none">
+                        {zone.name}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              </Container>
+            </section>
+
+            {/* CTA PRINCIPAL */}
+            <Container className="text-center my-4">
               <Button href="/me-contacter">
                 Contactez-moi
               </Button>
@@ -160,7 +186,7 @@ export default function Home() {
 
             <div className="col-md-4 services-col mb-4">
               <div className="service-card p-3 h-100">
-                <h3>🚗 Courses locales & longues distances</h3>
+                <h3>🚗 Courses locales</h3>
                 <p>Déplacements professionnels ou personnels. Flexibilité et disponibilité assurées.</p>
                 <Button variant="outline-primary" href="/mes-services">En savoir plus</Button>
               </div>

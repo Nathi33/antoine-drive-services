@@ -13,7 +13,7 @@ const myPin = new L.Icon({
 export default function MapLeaflet() {
   return (
     <MapContainer
-      center={[45.019, -0.627]} // coordonnées de Vaire
+      center={[46.601, -1.75]} // coordonnées de Vaire
       zoom={13}
       style={{ height: "300px", width: "100%", borderRadius: "10px" }}
     >
