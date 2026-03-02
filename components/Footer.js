@@ -40,11 +40,11 @@ export default function Footer() {
               <Nav.Link as={Link} href="/vtc/vaires" className="footer-link">
                 Vaires
               </Nav.Link>
-              <Nav.Link as={Link} href="/vtc/fontenay-le-comte" className="footer-link">
-                Fontenay-le-Comte
+              <Nav.Link as={Link} href="/vtc/sables-d-olonne" className="footer-link">
+                Les Sables d’Olonne
               </Nav.Link>
-              <Nav.Link as={Link} href="/vtc/benet" className="footer-link">
-                Benet
+              <Nav.Link as={Link} href="/vtc/la-mothe-achard" className="footer-link">
+                La Mothe-Achard
               </Nav.Link>
             </Nav>
           </Col>

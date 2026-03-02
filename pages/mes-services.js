@@ -103,9 +103,9 @@ export default function MesServices() {
                   Chauffeur privé VTC basé à{" "}
                   <Link href="/vtc/vaires" className="link-vtc">Vaires (85)</Link>,  
                   j’assure des prestations de transport à{" "}
-                  <Link href="/vtc/fontenay-le-comte" className="link-vtc">Fontenay-le-Comte</Link>{" "}
-                  et{" "}
-                  <Link href="/vtc/benet" className="link-vtc">Benet</Link>,  
+                  <Link href="/vtc/la-mothe-achard" className="link-vtc">La Mothe-Achard</Link>{" "}
+                  et aux{" "}
+                  <Link href="/vtc/sables-d-olonne" className="link-vtc">Sables d’Olonne</Link>,  
                   ainsi que dans les communes environnantes dans un rayon d’environ 15 km.
                 </p>
               </div>

@@ -138,8 +138,8 @@ export default function VtcVaires() {
 
               <p className="mt-3">
                 J’interviens également à{" "}
-                <Link href="/vtc/fontenay-le-comte" className="link-vtc">Fontenay-le-Comte</Link>,{" "}
-                <Link href="/vtc/benet" className="link-vtc">Benet</Link> et dans les communes
+                <Link href="/vtc/la-mothe-achard" className="link-vtc">La Mothe-Achard</Link>, aux{" "}
+                <Link href="/vtc/sables-d-olonne" className="link-vtc">Sables d’Olonne</Link> et dans les communes
                 environnantes.
               </p>
             </Col>

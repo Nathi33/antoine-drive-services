@@ -77,14 +77,6 @@ export default function PolitiqueConfidentialite() {
               </p>
             </Col>
           </Row>
-
-          <Row className="mt-5">
-            <Col className="text-center">
-              <p style={{ fontSize: "0.8rem", color: "#666" }}>
-                Site réalisé par Nathalie Darnaudat – NDWebApp
-              </p>
-            </Col>
-          </Row>
         </Container>
       </main>
     </>

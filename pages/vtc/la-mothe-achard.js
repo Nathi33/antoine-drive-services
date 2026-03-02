@@ -7,15 +7,14 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function VtcBenet() {
+export default function VtcFontenayLeComte() {
 
   useLayoutEffect(() => {
-    // Nettoyage complet
+    // Nettoyage total avant relance
     ScrollTrigger.killAll();
     gsap.killTweensOf("*");
 
     const ctx = gsap.context(() => {
-
       // État initial visible
       gsap.set(
         [".vtc-title", ".vtc-intro", ".vtc-cta", ".vtc-services li", ".vtc-faq li"],
@@ -88,15 +87,15 @@ export default function VtcBenet() {
       ScrollTrigger.refresh();
     });
 
-    return () => ctx.revert();
+    return () => ctx.revert(); // nettoyage propre
   }, []);
 
   return (
     <>
       <Seo
-        title="VTC à Benet (85) – Chauffeur privé | Antoine Drive Services"
-        description="Chauffeur privé VTC à Benet (85). Trajets locaux, gare, aéroport, déplacements professionnels et évènements."
-        url="https://www.antoine-drive-services.fr/vtc/benet"
+        title="VTC à La Mothe-Achard (85) – Chauffeur privé | Antoine Drive Services"
+        description="Chauffeur privé VTC à La Mothe-Achard. Trajets locaux, gare, aéroport, déplacements professionnels et évènements."
+        url="https://www.antoine-drive-services.fr/vtc/la-mothe-achard"
       />
 
       <main>
@@ -104,15 +103,16 @@ export default function VtcBenet() {
 
           {/* Titre */}
           <h1 className="text-center mb-4 vtc-title">
-            VTC à Benet (85) – Chauffeur privé
+            VTC à La Mothe-Achard (85) – Chauffeur privé
           </h1>
 
           {/* Intro */}
           <p className="lead text-center mb-5 vtc-intro">
-            <strong>Antoine Drive Services</strong> propose un service de chauffeur
-            privé à <strong>Benet (85)</strong>, adapté à vos déplacements
-            quotidiens comme professionnels. Confort, sécurité et ponctualité
-            garanties.
+            Vous recherchez un <strong>VTC à La Mothe-Achard</strong> pour vos
+            déplacements personnels ou professionnels ?{" "}
+            <strong>Antoine Drive Services</strong> vous accompagne avec un
+            service fiable et ponctuel, au départ ou à destination de
+            La Mothe-Achard.
           </p>
 
           {/* CTA */}
@@ -133,12 +133,12 @@ export default function VtcBenet() {
           {/* Services */}
           <Row className="justify-content-center mb-5 vtc-services">
             <Col md={8}>
-              <h2 className="mb-3">Mes prestations VTC à Benet</h2>
+              <h2 className="mb-3">Mes services de VTC à La Mothe-Achard</h2>
               <ul>
-                <li>Déplacements locaux et régionaux</li>
+                <li>Trajets domicile – travail</li>
                 <li>Transferts gare et aéroport</li>
-                <li>Transport privé et professionnel</li>
-                <li>Trajets pour évènements (mariages, anniversaires…)</li>
+                <li>Rendez-vous professionnels</li>
+                <li>Transport privé sur réservation</li>
               </ul>
 
               <p className="mt-3">
@@ -147,8 +147,8 @@ export default function VtcBenet() {
                   Vaires
                 </Link>
                 ,{" "}
-                <Link href="/vtc/fontenay-le-comte" className="link-vtc">
-                  Fontenay-le-Comte
+                <Link href="/vtc/sables-d-olonne" className="link-vtc">
+                  Les Sables d’Olonne
                 </Link>{" "}
                 et dans les communes environnantes.
               </p>
@@ -158,15 +158,16 @@ export default function VtcBenet() {
           {/* FAQ */}
           <Row className="justify-content-center">
             <Col md={8}>
-              <h2 className="mb-4">FAQ – VTC à Benet</h2>
+              <h2 className="mb-4">FAQ – VTC à La Mothe-Achard</h2>
               <ul className="list-unstyled vtc-faq">
                 <li className="mb-3">
-                  <strong>Peut-on réserver pour un trajet tôt le matin ?</strong>{" "}
-                  → Oui, sur réservation.
+                  <strong>Assurez-vous les trajets vers les aéroports ?</strong>{" "}
+                  → Oui, je réalise des transferts sur réservation.
                 </li>
                 <li className="mb-3">
-                  <strong>Intervenez-vous dans les communes voisines ?</strong>{" "}
-                  → Oui, dans un rayon d’environ 15 km.
+                  <strong>Êtes-vous disponible le week-end ?</strong> → Mes
+                  services VTC sont disponibles en semaine et le week-end selon
+                  disponibilité.
                 </li>
               </ul>
             </Col>

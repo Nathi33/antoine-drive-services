@@ -7,14 +7,15 @@ import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function VtcFontenayLeComte() {
+export default function VtcBenet() {
 
   useLayoutEffect(() => {
-    // Nettoyage total avant relance
+    // Nettoyage complet
     ScrollTrigger.killAll();
     gsap.killTweensOf("*");
 
     const ctx = gsap.context(() => {
+
       // État initial visible
       gsap.set(
         [".vtc-title", ".vtc-intro", ".vtc-cta", ".vtc-services li", ".vtc-faq li"],
@@ -87,15 +88,15 @@ export default function VtcFontenayLeComte() {
       ScrollTrigger.refresh();
     });
 
-    return () => ctx.revert(); // nettoyage propre
+    return () => ctx.revert();
   }, []);
 
   return (
     <>
       <Seo
-        title="VTC à Fontenay-le-Comte (85) – Chauffeur privé | Antoine Drive Services"
-        description="Chauffeur privé VTC à Fontenay-le-Comte. Trajets locaux, gare, aéroport, déplacements professionnels et évènements."
-        url="https://www.antoine-drive-services.fr/vtc/fontenay-le-comte"
+        title="VTC aux Sables d’Olonne (85) – Chauffeur privé | Antoine Drive Services"
+        description="Chauffeur privé VTC aux Les Sables d’Olonne (85). Trajets locaux, gare, aéroport, déplacements professionnels et évènements."
+        url="https://www.antoine-drive-services.fr/vtc/sables-d-olonne"
       />
 
       <main>
@@ -103,16 +104,15 @@ export default function VtcFontenayLeComte() {
 
           {/* Titre */}
           <h1 className="text-center mb-4 vtc-title">
-            VTC à Fontenay-le-Comte (85) – Chauffeur privé
+            VTC aux Sables d’Olonne (85) – Chauffeur privé
           </h1>
 
           {/* Intro */}
           <p className="lead text-center mb-5 vtc-intro">
-            Vous recherchez un <strong>VTC à Fontenay-le-Comte</strong> pour vos
-            déplacements personnels ou professionnels ?{" "}
-            <strong>Antoine Drive Services</strong> vous accompagne avec un
-            service fiable et ponctuel, au départ ou à destination de
-            Fontenay-le-Comte.
+            <strong>Antoine Drive Services</strong> propose un service de chauffeur
+            privé aux <strong>Sables d’Olonne (85)</strong>, adapté à vos déplacements
+            quotidiens comme professionnels. Confort, sécurité et ponctualité
+            garanties.
           </p>
 
           {/* CTA */}
@@ -133,12 +133,12 @@ export default function VtcFontenayLeComte() {
           {/* Services */}
           <Row className="justify-content-center mb-5 vtc-services">
             <Col md={8}>
-              <h2 className="mb-3">Mes services de VTC à Fontenay-le-Comte</h2>
+              <h2 className="mb-3">Mes prestations VTC aux Sables d’Olonne</h2>
               <ul>
-                <li>Trajets domicile – travail</li>
+                <li>Déplacements locaux et régionaux</li>
                 <li>Transferts gare et aéroport</li>
-                <li>Rendez-vous professionnels</li>
-                <li>Transport privé sur réservation</li>
+                <li>Transport privé et professionnel</li>
+                <li>Trajets pour évènements (mariages, anniversaires…)</li>
               </ul>
 
               <p className="mt-3">
@@ -147,8 +147,8 @@ export default function VtcFontenayLeComte() {
                   Vaires
                 </Link>
                 ,{" "}
-                <Link href="/vtc/benet" className="link-vtc">
-                  Benet
+                <Link href="/vtc/la-mothe-achards" className="link-vtc">
+                  La Mothe-Achard
                 </Link>{" "}
                 et dans les communes environnantes.
               </p>
@@ -158,16 +158,15 @@ export default function VtcFontenayLeComte() {
           {/* FAQ */}
           <Row className="justify-content-center">
             <Col md={8}>
-              <h2 className="mb-4">FAQ – VTC à Fontenay-le-Comte</h2>
+              <h2 className="mb-4">FAQ – VTC à Benet</h2>
               <ul className="list-unstyled vtc-faq">
                 <li className="mb-3">
-                  <strong>Assurez-vous les trajets vers les aéroports ?</strong>{" "}
-                  → Oui, je réalise des transferts sur réservation.
+                  <strong>Peut-on réserver pour un trajet tôt le matin ?</strong>{" "}
+                  → Oui, sur réservation.
                 </li>
                 <li className="mb-3">
-                  <strong>Êtes-vous disponible le week-end ?</strong> → Mes
-                  services VTC sont disponibles en semaine et le week-end selon
-                  disponibilité.
+                  <strong>Intervenez-vous dans les communes voisines ?</strong>{" "}
+                  → Oui, dans un rayon d’environ 15 km.
                 </li>
               </ul>
             </Col>
