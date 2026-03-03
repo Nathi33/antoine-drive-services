@@ -143,8 +143,8 @@ export default function VtcBenet() {
 
               <p className="mt-3">
                 J’interviens également à{" "}
-                <Link href="/vtc/vaires" className="link-vtc">
-                  Vaires
+                <Link href="/vtc/vaire" className="link-vtc">
+                  Vairé
                 </Link>
                 ,{" "}
                 <Link href="/vtc/la-mothe-achards" className="link-vtc">
@@ -158,7 +158,7 @@ export default function VtcBenet() {
           {/* FAQ */}
           <Row className="justify-content-center">
             <Col md={8}>
-              <h2 className="mb-4">FAQ – VTC à Benet</h2>
+              <h2 className="mb-4">FAQ – VTC aux Sables d’Olonne</h2>
               <ul className="list-unstyled vtc-faq">
                 <li className="mb-3">
                   <strong>Peut-on réserver pour un trajet tôt le matin ?</strong>{" "}

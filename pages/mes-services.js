@@ -101,7 +101,7 @@ export default function MesServices() {
                 <h2 className="service-title">📍Zones desservies</h2>
                 <p className="service-text">
                   Chauffeur privé VTC basé à{" "}
-                  <Link href="/vtc/vaires" className="link-vtc">Vaires (85)</Link>,  
+                  <Link href="/vtc/vaire" className="link-vtc">Vairé (85)</Link>,  
                   j’assure des prestations de transport à{" "}
                   <Link href="/vtc/la-mothe-achard" className="link-vtc">La Mothe-Achard</Link>{" "}
                   et aux{" "}

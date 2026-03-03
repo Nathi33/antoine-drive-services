@@ -93,9 +93,9 @@ export default function VtcVaires() {
   return (
     <>
       <Seo
-        title="VTC à Vaires (85) – Chauffeur privé | Antoine Drive Services"
-        description="Chauffeur privé VTC à Vaires (85). Trajets locaux, gare, aéroport, déplacements professionnels et évènements."
-        url="https://www.antoine-drive-services.fr/vtc/vaires"
+        title="VTC à Vairé (85) – Chauffeur privé | Antoine Drive Services"
+        description="Chauffeur privé VTC à Vairé (85). Trajets locaux, gare, aéroport, déplacements professionnels et évènements."
+        url="https://www.antoine-drive-services.fr/vtc/vaire"
       />
 
       <main>
@@ -103,12 +103,12 @@ export default function VtcVaires() {
 
           {/* Titre */}
           <h1 className="text-center mb-4 vtc-title">
-            VTC à Vaires (85) – Chauffeur privé
+            VTC à Vairé (85) – Chauffeur privé
           </h1>
 
           {/* Intro */}
           <p className="lead text-center mb-5 vtc-intro">
-            Basé à <strong>Vaires (85)</strong>, Antoine Drive Services vous
+            Basé à <strong>Vairé (85)</strong>, Antoine Drive Services vous
             accompagne pour tous vos déplacements personnels et professionnels
             dans le sud de la Vendée. Ponctualité, confort et service sur mesure.
           </p>
@@ -128,7 +128,7 @@ export default function VtcVaires() {
           {/* Services */}
           <Row className="justify-content-center mb-5 vtc-services">
             <Col md={8}>
-              <h2 className="mb-3">Mes services de VTC à Vaires</h2>
+              <h2 className="mb-3">Mes services de VTC à Vairé</h2>
               <ul>
                 <li>Déplacements locaux et régionaux</li>
                 <li>Transferts gares et aéroports</li>
@@ -148,14 +148,14 @@ export default function VtcVaires() {
           {/* FAQ */}
           <Row className="justify-content-center">
             <Col md={8}>
-              <h2 className="mb-4">Questions fréquentes – VTC à Vaires</h2>
+              <h2 className="mb-4">Questions fréquentes – VTC à Vairé</h2>
               <ul className="list-unstyled vtc-faq">
                 <li className="mb-3">
                   <strong>Faut-il réserver à l’avance ?</strong> → Oui, afin de
                   garantir la disponibilité.
                 </li>
                 <li className="mb-3">
-                  <strong>Intervenez-vous hors de Vaires ?</strong> → Oui, dans
+                  <strong>Intervenez-vous hors de Vairé ?</strong> → Oui, dans
                   un rayon d’environ 15 km et vers les gares/aéroports.
                 </li>
                 <li className="mb-3">

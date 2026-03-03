@@ -69,7 +69,7 @@ export default function Contact() {
     };
     
     // Envoi de l'email via EmailJS
-    emailjs.sendForm(
+    emailjs.send(
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
       templateParams,
@@ -183,7 +183,7 @@ export default function Contact() {
               <h2>Infos pratiques</h2>
               <p>📞 <a href="tel:+33743652785" className="contact-page-link">07 43 65 27 85</a></p>
               <p>✉️ <a href="mailto:antoinedriveservices@free.fr" className="contact-page-link">antoinedriveservices@free.fr</a></p>
-              <p>📍 Basé à Vaire et disponible pour tous vos trajets locaux.</p>
+              <p>📍 Basé à Vairé et disponible pour tous vos trajets locaux.</p>
 
               {/* Carte */}
               <div className="mt-3">

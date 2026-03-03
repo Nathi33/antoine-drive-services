@@ -143,8 +143,8 @@ export default function VtcFontenayLeComte() {
 
               <p className="mt-3">
                 J’interviens également à{" "}
-                <Link href="/vtc/vaires" className="link-vtc">
-                  Vaires
+                <Link href="/vtc/vaire" className="link-vtc">
+                  Vairé
                 </Link>
                 ,{" "}
                 <Link href="/vtc/sables-d-olonne" className="link-vtc">

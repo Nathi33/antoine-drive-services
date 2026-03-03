@@ -37,8 +37,8 @@ export default function Footer() {
           <Col md={3} className="mb-3 mb-md-0">
             <h4 className="footer-column-title">Zones desservies :</h4>
             <Nav className="flex-column text-center text-md-start">
-              <Nav.Link as={Link} href="/vtc/vaires" className="footer-link">
-                Vaires
+              <Nav.Link as={Link} href="/vtc/vaire" className="footer-link">
+                Vairé
               </Nav.Link>
               <Nav.Link as={Link} href="/vtc/sables-d-olonne" className="footer-link">
                 Les Sables d’Olonne

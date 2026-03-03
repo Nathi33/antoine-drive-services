@@ -124,7 +124,7 @@ export default function APropos() {
     <>
       <Seo
         title="À propos - Antoine Drive Services"
-        description="Antoine Drive Services, chauffeur VTC passionné à Vaire. Confort, ponctualité et éco-responsabilité pour tous vos trajets."
+        description="Antoine Drive Services, chauffeur VTC passionné à Vairé. Confort, ponctualité et éco-responsabilité pour tous vos trajets."
         url="https://www.antoine-drive-services.fr/a-propos"
       />
 
@@ -151,7 +151,7 @@ export default function APropos() {
               >
                 <Image
                   src="/Antoine.webp"
-                  alt="Antoine, chauffeur VTC à Vaire, souriant"
+                  alt="Antoine, chauffeur VTC à Vairé, souriant"
                   width={350}
                   height={350}
                   style={{ objectFit: "cover", display: "block" }}
@@ -162,7 +162,7 @@ export default function APropos() {
             {/* --- TEXTE --- */}
             <Col md={6} className="about-text-col order-2 order-md-1">
               <p className="lead mb-3">
-                Chauffeur VTC passionné et attentif basé à Vaire, j’assure vos déplacements en alliant confort, ponctualité et discrétion.
+                Chauffeur VTC passionné et attentif basé à Vairé, j’assure vos déplacements en alliant confort, ponctualité et discrétion.
               </p>
               <p>
                 Je vous accueille à bord d’un véhicule 100% électrique, silencieux et éco-responsable, pour un trajet agréable, sûr et respectueux de l’environnement.
