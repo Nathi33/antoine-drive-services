@@ -75,7 +75,7 @@ button:hover, .btn:hover, .cta-secondary button:hover {
 /* --- Navbar --- */
 .navbar {
   background-color: var(--color-gris-metalise) !important;
-  padding: 0.8rem 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .navbar .nav-link {

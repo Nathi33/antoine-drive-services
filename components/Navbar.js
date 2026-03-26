@@ -27,7 +27,7 @@ export default function MyNavbar() {
           <Image
             src="/Logo.webp"
             alt="Logo Antoine Drive Services"
-            height={60}
+            height={100}
             width={100}
             className="mini-logo d-inline-block align-top"
             priority

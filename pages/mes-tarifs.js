@@ -119,6 +119,9 @@ export default function MesTarifs() {
                 <li className="mb-3">
                   <strong>Prix indicatif au km</strong> → Le tarif peut être estimé sur simple demande, mais reste indicatif.
                 </li>
+                <li className="mb-3">
+                  <strong>Les tarifs incluent-ils la TVA ?</strong> → Antoine Drive Services exerce sous le régime de la micro-entreprise. À ce titre, la TVA n’est pas applicable (art. 293 B du CGI). Les tarifs communiqués sont donc exprimés en montant net, sans TVA récupérable.
+                </li>
               </ul>
             </Col>
           </Row>

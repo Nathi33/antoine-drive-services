@@ -22,7 +22,7 @@ export default function MapLeaflet() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       />
       <Marker position={[45.019, -0.627]} icon={myPin}>
-        <Popup>Antoine Drive Services - Vaire</Popup>
+        <Popup>Antoine Drive Services - Vairé</Popup>
       </Marker>
     </MapContainer>
   );

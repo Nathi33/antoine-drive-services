@@ -17,7 +17,7 @@ export default function Footer() {
               <Image
                 src="/Logo.webp"
                 alt="Logo Antoine Drive Services"
-                height={60}
+                height={100}
                 width={100}
                 className="footer-logo"
               />

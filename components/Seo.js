@@ -24,7 +24,7 @@ export default function Seo({
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "3 route de la Combe",
-      "addressLocality": "Vaire",
+      "addressLocality": "Vairé",
       "postalCode": "85150",
       "addressCountry": "FR"
     },
@@ -34,9 +34,9 @@ export default function Seo({
       "longitude": -1.75
     },
     "areaServed": [
-      {"@type": "City", "name": "Vaire"},
-      {"@type": "City", "name": "Benet"},
-      {"@type": "City", "name": "Fontenay-le-Comte"},
+      {"@type": "City", "name": "Vairé"},
+      {"@type": "City", "name": "Les Sables d'Olonne"},
+      {"@type": "City", "name": "La Mothe-Achard"},
     ],
       
     "hasOfferCatalog": {

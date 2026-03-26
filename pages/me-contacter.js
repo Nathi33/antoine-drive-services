@@ -12,6 +12,9 @@ import emailjs from "@emailjs/browser";
 registerLocale("fr", fr);
 gsap.registerPlugin(ScrollTrigger);
 
+// Option du calendrier
+const firstAvailableDate = new Date(2026, 2, 16);
+
 // Import dynamique du composant MapLeaflet pour éviter l'erreur window
 const MapWithNoSSR = dynamic(() => import("../components/MapLeaflet"), { ssr: false });
 
@@ -52,20 +55,21 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const form = e.target;
     setFeedback({ type: "", message: "", visible: false });
 
     // Préparer les variables pour EmailJS
     const templateParams = {
-      user_name: e.target.user_name.value,
-      user_email: e.target.user_email.value,
-      user_phone: e.target.user_phone.value,
+      user_name: form.user_name.value,
+      user_email: form.user_email.value,
+      user_phone: form.user_phone.value,
       travel_date: selectedDate ? selectedDate.toLocaleDateString("fr-FR") : "",
       travel_time: selectedTime ? selectedTime.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" }) : "",
-      departure: e.target.departure.value,
-      arrival: e.target.arrival.value,
-      message: e.target.message.value || "",
-      to_email: process.env.NEXT_PUBLIC_EMAILJS_TO_EMAIL, // Redirection vers Free
-      from_email: process.env.NEXT_PUBLIC_EMAILJS_FROM_EMAIL, // Adresse OVH
+      departure: form.departure.value,
+      arrival: form.arrival.value,
+      message: form.message.value || "Auncune information complémentaire",
+      to_email: process.env.NEXT_PUBLIC_EMAILJS_TO_EMAIL,
     };
     
     // Envoi de l'email via EmailJS
@@ -76,8 +80,10 @@ export default function Contact() {
       process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     )
     .then(() => {
-      setFeedback({ type: "success", message: "Votre message a bien été envoyé !", visible: true });
-      e.target.reset();
+      window.scrollTo({ top: 0, behavior: 'smooth'})
+
+      setFeedback({ type: "success", message: "Votre demande a bien été envoyée. Antoine Drive Services vous recontactera rapidement", visible: true });
+      form.reset();
       setSelectedDate(null);
       setSelectedTime(null);
 
@@ -87,8 +93,9 @@ export default function Contact() {
       }, 5000);
     })
     .catch((err) => {
-      console.error(err);
-      setFeedback({ type: "danger", message: "Erreur lors de l'envoi du message. Veuillez réessayer plus tard.", visible: true });
+      console.error("Erreur EmailJS: ", err);
+      window.scrollTo({ top: 0, behavior: "smooth"})
+      setFeedback({ type: "danger", message: "Une erreur est survenue lors de l’envoi. Veuillez réessayer ou nous contacter par téléphone.", visible: true });
 
       // Masquer le message après 5 secondes
       setTimeout(() => {
@@ -108,6 +115,12 @@ export default function Contact() {
       <main>
         <Container className="my-4">
           <h1 className="text-center mb-5 contact-title">Contactez-moi</h1>
+
+          {feedback.visible && (
+            <Alert variant={feedback.type} className="mt-3 animate__animated animate__fadeIn">
+              {feedback.message}
+              </Alert>
+          )}
 
           <Row className="justify-content-center">
             {/* Formulaire */}
@@ -136,6 +149,7 @@ export default function Contact() {
                     locale="fr"
                     required
                     name="travel_date"
+                    filterDate={(date) => date >= firstAvailableDate}
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
@@ -169,12 +183,6 @@ export default function Contact() {
                 </Form.Group>
                 <p className="form-legend"><span className="required">*</span> Champs obligatoires</p>
                 <Button type="submit" className="px-4 py-2">Envoyer</Button>
-
-                {feedback.visible && (
-                  <Alert variant={feedback.type} className="mt-3 animate__animated animate__fadeIn">
-                    {feedback.message}
-                  </Alert>
-                )}
               </Form>
             </Col>
 
