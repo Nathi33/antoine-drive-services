@@ -153,7 +153,7 @@ export default function Home() {
                 <div className="row justify-content-center">
                   {[
                     { name: "Vairé", href: "/vtc/vaire" },
-                    { name: "Les Sables d'Olonnes", href: "/vtc/sables-d'-olonne" },
+                    { name: "Les Sables d'Olonnes", href: "/vtc/sables-d-olonne" },
                     { name: "La Mothe-Achard", href: "/vtc/la-mothe-achard" },
                   ].map((zone, i) => (
                     <div key={i} className="col-6 col-md-3 mb-3">
