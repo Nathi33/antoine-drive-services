@@ -190,7 +190,7 @@ export default function Contact() {
             <Col md={4} className="mt-4 mt-md-0 contact-element">
               <h2>Infos pratiques</h2>
               <p>📞 <a href="tel:+33743652785" className="contact-page-link">07 43 65 27 85</a></p>
-              <p>✉️ <a href="mailto:antoinedriveservices@free.fr" className="contact-page-link">antoinedriveservices@free.fr</a></p>
+              <p>✉️ <a href="mailto:antoinetignola@orange.fr" className="contact-page-link">antoinetignola@orange.fr</a></p>
               <p>📍 Basé à Vairé et disponible pour tous vos trajets locaux.</p>
 
               {/* Carte */}

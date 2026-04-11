@@ -46,7 +46,7 @@ export default function PolitiqueConfidentialite() {
             <Col>
               <h2>Droits des utilisateurs</h2>
               <p>
-                Conformément à la loi RGPD, vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition de vos données personnelles. Pour exercer vos droits, contactez : <a href="mailto:antoinedriveservices@free.fr" className="contact-page-link">antoinedriveservices@free.fr</a>.
+                Conformément à la loi RGPD, vous disposez d’un droit d’accès, de rectification, de suppression et d’opposition de vos données personnelles. Pour exercer vos droits, contactez : <a href="mailto:antoinetignola@orange.fr" className="contact-page-link">antoinetignola@orange.fr</a>.
               </p>
             </Col>
           </Row>
@@ -73,7 +73,7 @@ export default function PolitiqueConfidentialite() {
             <Col>
               <h2>Contact</h2>
               <p>
-                Pour toute question relative à la protection des données personnelles, vous pouvez contacter Antoine Drive Services à : <a href="mailto:antoinedriveservices@free.fr" className="contact-page-link">antoinedriveservices@free.fr</a>.
+                Pour toute question relative à la protection des données personnelles, vous pouvez contacter Antoine Drive Services à : <a href="mailto:antoinetignola@orange.fr" className="contact-page-link">antoinetignola@orange.fr</a>.
               </p>
             </Col>
           </Row>

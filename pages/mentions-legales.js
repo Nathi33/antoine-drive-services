@@ -26,7 +26,7 @@ export default function MentionsLegales() {
                 <li>Nom : Antoine Drive Services</li>
                 <li>Statut juridique : Micro-entreprise</li>
                 <li>Adresse : Vairé, 85150</li>
-                <li>Email : <a href="mailto:antoinedriveservices@free.fr" className="legal-link">antoinedriveservices@free.fr</a></li>
+                <li>Email : <a href="mailto:antoinetignola@orange.fr" className="legal-link">antoinetignola@orange.fr</a></li>
                 <li>Numéro de téléphone : <a href="tel:+33743652785" className="legal-link">07 43 65 27 85</a></li>
                 <li>SIRET : 39960125100057</li>
                 <li>TVA : Non applicable, article 293 B du Code général des impôts</li>

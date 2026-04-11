@@ -97,7 +97,7 @@ export default function MesTarifs() {
                 📞 <a href="tel:+33743652785" className="price-link">07 43 65 27 85</a>
               </p>
               <p>
-                ✉️ <a href="mailto:antoinedriveservices@free.fr" className="price-link">contact@antoinedriveservices.fr</a>
+                ✉️ <a href="mailto:antoinetignola@orange.fr" className="price-link">antoinetignola@orange.fr</a>
               </p>
             </Col>
           </Row>

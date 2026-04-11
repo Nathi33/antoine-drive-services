@@ -54,7 +54,7 @@ export default function Footer() {
             <h4 className="footer-column-title">Contactez-moi :</h4>
             <div>
               <p className="container-link mb-2">
-                <a href="mailto:antoinedriveservices@free.fr" className="contact-link ms-1">✉️ antoinedriveservices@free.fr</a>
+                <a href="mailto:antoinetignola@orange.fr" className="contact-link ms-1">✉️ antoinetignola@orange.fr</a>
               </p>
               <p className="container-link mb-2">
                 <a href="tel:+33743652785" className="contact-link ms-1">📞 07 43 65 27 85</a>
